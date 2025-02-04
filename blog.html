@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <h1>LifeScienceTimes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>|
+                <li><a href="#">About</a></li>|
+                <li><a href="#">Blog</a></li>|
+                <li><a href="#">Resources</a></li>|
+                <li><a href="#">Contact</a></li>|
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="blog-posts">
+            <article>
+                <h2>Functional Properties of Carrot</h2>
+                <p class="post-date">November 17, 2024</p>
+                <p>Carrot (<i>Daucus carota</i>) is a root vegetable that is usually orange in color. Carrots were utilized as food for a while after there were first used medicinally.
+                An increased intake of carrots has bben linked to a lower risk of various diseases, including cancer, age-related macular degeneration, cardio-vascular diseases, and chronic.....</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article>
+                <h2>Introduction to Virus-Like particles(VLPs)</h2>
+                <p class="post-date">November 19, 2024</p>
+                <p>Virus-like particles are nanoscale structures made of assembled viral proteins that lack viral genetic material and are therfore non-infectious. 
+                    They are a type of subunit vaccine based on virus derived proteins, assembled.....</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </section>
+        <aside class="sidebar">
+            <h3>About This Blog</h3>
+            <p>This blogs provides educational information, resources, tutorials, and guides on various topics relating to science.</p>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Microbiology</a></li>
+                <li><a href="#">Plant Biology</a></li>
+                <li><a href="#">Basic Science</a></li>
+                <li><a href="#">Animal Science</a></li>
+            </ul>
+        </aside>
+    </main>
+    <button id="back-to-top">Back to Top</button>
+    <section class="featured-post">
+        <h2>Featured Post</h2>
+        <article>
+            <h3>Antimicrobial Activities of Essential oils</h3>
+            <p>This article explores the antibacterial, antifungal, antiseptic, antiviral, 
+                antioxidant, antiparasitic, and insecticidal properties that have been reported for various essential oils.</p>
+                <a href="#" class="read-more">Read More</a>
+        </article>
+    </section>
+    <div class="search-bar">
+        <input type="text" placeholder="Search articles..." id="search-input">
+        <button onclick="searchArticles()">Search</button>
+    </div>
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest educational posts delivered to you inbox!</p>
+        <form action="#" id="newsletter" method="post" onsubmit="return validation()">
+            <input type="email" id="newsletter-email" placeholder="Enter your Email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section> 
+    <section class="resources">
+        <h1>Helpful Resources</h1>
+        <ul>
+            <li><a href="#" target="_blank">Introduction to Microbiology</a></li>
+            <li><a href="#">How Does Digestion Work?</a></li>
+            <li><a href="#">Virus: Viral proteins Assembly</a></li>
+        </ul>
+    </section>
+    <section class="author-bio">
+        <h2>About the Author</h2>
+        <img src="Author Image.JPG" alt="Image">
+        <p>Hello, My name is Okereke Beatrice, a B.Sc degree holder in Microbiology from the University of Benin and still a lifelong learner. 
+            I created this blog to share insights and information on science related topics to help others learn.
+        </p>
+    </section>
+    <section class="cta">
+        <h2>Ready to Start your Learning Journey?</h2>
+        <a href="#" class="cta-button">Explore Our Topics</a>
+    </section>
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" id="contact" method="post" onsubmit="return validationTwo()">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 LifeScienceTimes</p>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>
